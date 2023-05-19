@@ -6,7 +6,7 @@ import { Scene } from "./scene";
 import { Renderer } from "./render";
 import { Collider2d } from "collider2d";
 import { Gui } from "./gui";
-import { GamepadAdapter } from "./gamepadAdapter";
+// import { GamepadAdapter } from "./gamepadAdapter";
 import { themes } from "../../public/themes/index";
 import { Theme } from "../../public/themes/theme";
 import { registerServiceWorker } from "./registerServiceWorker";
@@ -18,7 +18,7 @@ export class Game {
 	obstacles: Obstacle[];
 	scene: Scene;
 	players: Character[];
-	gamepadAdapter: GamepadAdapter;
+	// gamepadAdapter: GamepadAdapter;
 	countdown: Countdown;
 	gui: Gui;
 	theme: Theme;
@@ -34,7 +34,7 @@ export class Game {
 		this.ctx = canvas.getContext("2d")!;
 		this.showLoader();
 		this.collider = new Collider2d();
-		this.gamepadAdapter = new GamepadAdapter(this.ctx);
+		// this.gamepadAdapter = new GamepadAdapter(this.ctx);
 
         this.initTheme(themes[this.getTheme()]);
 		this.manageState();
