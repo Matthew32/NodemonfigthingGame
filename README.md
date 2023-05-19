@@ -1,5 +1,5 @@
 # Attacke!
-
+Changed the deploy into nodemon.
 Source: https://github.com/iamschulz/attacke
 
 ## Install:
