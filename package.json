@@ -22,6 +22,6 @@
 	"scripts": {
 		"build": "node esbuild.js",
 		"watch": "node esbuild.js --watch",
-		"start": "env-cmd -f ./.env nodemon app.ts && node esbuild.js --watch &"
+		"start": "env-cmd -f ./.env nodemon app.ts"
 	}
 }
